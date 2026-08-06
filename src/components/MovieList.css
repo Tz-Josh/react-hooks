@@ -1,0 +1,46 @@
+.movie-grid {
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.no-movies-container {
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  margin: 20px 0;
+}
+
+.no-movies-content {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.no-movies-title {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.no-movies-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
