@@ -1,0 +1,125 @@
+.filter-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.filter-label {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-icon {
+  color: #ffd700;
+}
+
+.filter-input {
+  border-radius: 8px 0 0 8px !important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.clear-btn {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: none;
+  border-radius: 0 8px 8px 0 !important;
+  color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.filter-select {
+  border-radius: 8px !important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.clear-filters-btn {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(245, 87, 108, 0.4);
+}
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.active-filters-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 15px;
+  background: rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 50px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.filter-tag-remove {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.filter-tag-remove:hover {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    padding: 20px;
+  }
+  
+  .clear-filters-btn {
+    margin-top: 10px;
+  }
+}
